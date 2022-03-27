@@ -27,20 +27,20 @@ echo $tornado->brake();
 
 // ---------------- CARS
 require_once 'car.php';
-$merco = new Car("black", 6, "vinDiesel");
+$merco = new Car("noire", 6, "vinDiesel");
 
 echo "<br> <br>";
-echo "Voiture 1 : LA MERCO (roule à l'énergie " . $merco->getEnergy() . ")<br>";
+echo "Voiture 1 : LA MERCO " . $merco->getColor() . " (roule à l'énergie " . $merco->getEnergy() . ")<br>";
 echo $merco->start();
 echo "Démarrage en côte (" . $merco->getCurrentSpeed() . " km/h) <br>";
 echo $merco->forward();
 echo "Vroum vroum on avance ! (" . $merco->getCurrentSpeed() . " km/h) <br>";
 echo $merco->brake();
 
-$catrelle = new Car("blue", 6, "sans-plomb 95");
+$catrelle = new Car("bleue", 6, "sans-plomb 95");
 
 echo "<br> <br>";
-echo "Voiture 2 : LA CATRELLE (roule à l'énergie " . $catrelle->getEnergy() . ")<br>";
+echo "Voiture 2 : LA CATRELLE " . $catrelle->getColor() . " (roule à l'énergie " . $catrelle->getEnergy() . ")<br>";
 echo $catrelle->start();
 echo "Démarrage en côte (" . $catrelle->getCurrentSpeed() . " km/h) <br>";
 echo $catrelle->forward();
